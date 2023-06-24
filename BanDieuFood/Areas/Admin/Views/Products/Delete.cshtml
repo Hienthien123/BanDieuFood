@@ -1,0 +1,80 @@
+﻿@model BanDieuFood.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa sản phẩm</h2>
+
+<h3>Bạn có chắc chắn muốn xóa sản phẩm này?</h3>
+<div class="container">
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Unit)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Unit)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.ShoppingCartID)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.ShoppingCartID)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+
+    </dl>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn btn-outline-success" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-outline-secondary" })
+        </div>
+    }
+</div>

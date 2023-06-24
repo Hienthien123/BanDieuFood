@@ -1,0 +1,276 @@
+﻿
+@{
+    ViewBag.Title = "News";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+}
+<!-- breadcrumb-section -->
+<div class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="breadcrumb-text">
+                    <p>Chất lượng đi đầu</p>
+                    <h1>Tin tức</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end breadcrumb section -->
+<!-- latest news -->
+<div class="latest-news mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-news">
+                    <a href="#">
+                        <div class="">
+                            <img src="~/AssetsClient/img/sua-hat-dieu.jpg" />
+                        </div>
+                    </a>
+                    <div class="news-text-box">
+                        <h3><a href="#">Công dụng của hạt điều</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Hieu Nghia</span>
+                            <span class="date"><i class="fas fa-calendar"></i> @DateTime.Now</span>
+                        </p>
+                        <p class="excerpt">Với những thành phần dinh dưỡng trên thì ăn hạt điều sẽ mang lại rất nhiều lợi ích cho sức khỏe vì hạt điều cung cấp nguồn...</p>
+                        <a href=@Url.Action("SingleNews", "Home") class="read-more-btn">Đọc thêm <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-news">
+                    <a href="single-news.html">
+                        <div class="">
+                            <img src="~/AssetsClient/img/hat-dieu-tuoi.jpeg" />
+                        </div>
+                    </a>
+                    <div class="news-text-box">
+                        <h3><a href="#">Những lợi ích đến từ hạt điều mà bạn nên biết.</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Hieu Nghia</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                        </p>
+                        <p class="excerpt">Hạt điều có khả năng ngừa ung thư, nuôi dưỡng tóc và da, chăm sóc cho sức khỏe của xương, giảm cân...</p>
+                        <a href="single-news.html" class="read-more-btn">Đọc thêm <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-news">
+                    <a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
+                    <div class="news-text-box">
+                        <h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Hieu Nghia</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                        </p>
+                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                        <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            @*<div class="col-lg-4 col-md-6">
+                        <div class="single-latest-news">
+                            <a href="single-news.html"><div class="latest-news-bg news-bg-4"></div></a>
+                            <div class="news-text-box">
+                                <h3><a href="single-news.html">Fall in love with the fresh orange</a></h3>
+                                <p class="blog-meta">
+                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                                </p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                                <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-latest-news">
+                            <a href="single-news.html"><div class="latest-news-bg news-bg-5"></div></a>
+                            <div class="news-text-box">
+                                <h3><a href="single-news.html">Why the berries always look delecious</a></h3>
+                                <p class="blog-meta">
+                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                                </p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                                <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-latest-news">
+                            <a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
+                            <div class="news-text-box">
+                                <h3><a href="single-news.html">Love for fruits are genuine of John Doe</a></h3>
+                                <p class="blog-meta">
+                                    <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                    <span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
+                                </p>
+                                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                                <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="pagination-wrap">
+                                <ul>
+                                    <li><a href=@Url.Action("News", "Home")>Trước</a></li>
+                                    <li><a class="active" href=@Url.Action("News", "Home")>1</a></li>
+                                    <li><a href=@Url.Action("News", "Home")>2</a></li>
+                                    <li><a href=@Url.Action("News", "Home")>3</a></li>
+                                    <li><a href=@Url.Action("News", "Home")>Sau</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end latest news -->
+
+    @{
+        ViewBag.Title = "News";
+        Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    }
+    <!-- breadcrumb-section -->
+    <div class="breadcrumb-section breadcrumb-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <div class="breadcrumb-text">
+                        <p>Chất lượng đi đầu</p>
+                        <h1>Tin tức</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcrumb section -->
+    <!-- latest news -->
+    <div class="latest-news mt-150 mb-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news">
+                        <a href="#">
+                            <div class="">
+                                <img src="~/AssetsClient/img/sua-hat-dieu.jpg" />
+                            </div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="#">Công dụng của hạt điều</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Hieu Nghia</span>
+                                <span class="date"><i class="fas fa-calendar"></i> @DateTime.Now</span>
+                            </p>
+                            <p class="excerpt">Với những thành phần dinh dưỡng trên thì ăn hạt điều sẽ mang lại rất nhiều lợi ích cho sức khỏe vì hạt điều cung cấp nguồn...</p>
+                            <a href=@Url.Action("SingleNews", "Home") class="read-more-btn">Đọc thêm <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news">
+                        <a href="single-news.html">
+                            <div class="">
+                                <img src="~/AssetsClient/img/hat-dieu-tuoi.jpeg" />
+                            </div>
+                        </a>
+                        <div class="news-text-box">
+                            <h3><a href="#">Những lợi ích đến từ hạt điều mà bạn nên biết.</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Hieu Nghia</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                            </p>
+                            <p class="excerpt">Hạt điều có khả năng ngừa ung thư, nuôi dưỡng tóc và da, chăm sóc cho sức khỏe của xương, giảm cân...</p>
+                            <a href="single-news.html" class="read-more-btn">Đọc thêm <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-news">
+                        <a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
+                        <div class="news-text-box">
+                            <h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
+                            <p class="blog-meta">
+                                <span class="author"><i class="fas fa-user"></i> Hieu Nghia</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                            </p>
+                            <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                            <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="col-lg-4 col-md-6">
+                            <div class="single-latest-news">
+                                <a href="single-news.html"><div class="latest-news-bg news-bg-4"></div></a>
+                                <div class="news-text-box">
+                                    <h3><a href="single-news.html">Fall in love with the fresh orange</a></h3>
+                                    <p class="blog-meta">
+                                        <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                                    </p>
+                                    <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                                    <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-latest-news">
+                                <a href="single-news.html"><div class="latest-news-bg news-bg-5"></div></a>
+                                <div class="news-text-box">
+                                    <h3><a href="single-news.html">Why the berries always look delecious</a></h3>
+                                    <p class="blog-meta">
+                                        <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+                                    </p>
+                                    <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                                    <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-latest-news">
+                                <a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
+                                <div class="news-text-box">
+                                    <h3><a href="single-news.html">Love for fruits are genuine of John Doe</a></h3>
+                                    <p class="blog-meta">
+                                        <span class="author"><i class="fas fa-user"></i> Admin</span>
+                                        <span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
+                                    </p>
+                                    <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+                                    <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>*@
+
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="pagination-wrap">
+                                    <ul>
+                                        <li><a href=@Url.Action("News", "Home")>Trước</a></li>
+                                        <li><a class="active" href=@Url.Action("News", "Home")>1</a></li>
+                                        <li><a href=@Url.Action("News", "Home")>2</a></li>
+                                        <li><a href=@Url.Action("News", "Home")>3</a></li>
+                                        <li><a href=@Url.Action("News", "Home")>Sau</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end latest news -->

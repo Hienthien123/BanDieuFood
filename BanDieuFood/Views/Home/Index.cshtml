@@ -1,0 +1,243 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+}
+<!-- hero area -->
+<div class="hero-area hero-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-2 text-center">
+                <div class="hero-text">
+                    <div class="hero-text-tablecell">
+                        <p class="subtitle">Chất lượng đi đầu</p>
+                        <h1>Binh Phuoc Food</h1>
+                        <div class="hero-btns">
+                            <a href=@Url.Action("Index", "Product") class="boxed-btn">Sản phẩm</a>
+                            <a href=@Url.Action("Contact", "Home ") class="bordered-btn">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end hero area -->
+<!-- features list section -->
+<div class="list-section pt-80 pb-80">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="list-box d-flex align-items-center">
+                    <div class="list-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Miễn phí vận chuyển</h3>
+                        <p>Khi đặt hàng đến 1 triệu đồng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="list-box d-flex align-items-center">
+                    <div class="list-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Hỗ trợ 24/7</h3>
+                        <p>Hỗ trợ cả ngày</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="list-box d-flex justify-content-start align-items-center">
+                    <div class="list-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Hoàn tiền</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end features list section -->
+<!-- product section -->
+<div class="product-section mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="section-title">
+                    <h3 class="Product">Sản phẩm</h3>
+                    <p>Sản phẩm sấy khô, thơm ngon đến từ vùng đất Bình Phước.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="single-product-item">
+                    <div class="product-image">
+                        <a href="single-product.html"><img src="~/AssetsClient/img/products/product-img-1.jpg" alt=""></a>
+                    </div>
+                    <h3>Điều sấy khô</h3>
+                    <p class="product-price"><span>Per Kg</span> 85$ </p>
+                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="single-product-item">
+                    <div class="product-image">
+                        <a href="single-product.html"><img src="~/AssetsClient/img/products/product-img-2.jpg" alt=""></a>
+                    </div>
+                    <h3>Điều rang muối</h3>
+                    <p class="product-price"><span>Per Kg</span> 70$ </p>
+                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+                <div class="single-product-item">
+                    <div class="product-image">
+                        <a href="single-product.html"><img src="~/AssetsClient/img/products/product-img-3.jpg" alt=""></a>
+                    </div>
+                    <h3>Điều rang muối cháy tỏi</h3>
+                    <p class="product-price"><span>Per Kg</span> 35$ </p>
+                    <a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end product section -->
+<!-- cart banner section -->
+<section class="cart-banner pt-100 pb-100">
+    <div class="container">
+        <div class="row clearfix">
+            <!--Image Column-->
+            <div class="image-column col-lg-6">
+                <div class="image">
+                    <div class="price-box">
+                        <div class="inner-price">
+                            <span class="price">
+                                <strong>30%</strong> <br> cho 70gram
+                            </span>
+                        </div>
+                    </div>
+                    <img src="~/AssetsClient/img/sale.jpg" alt="">
+                </div>
+            </div>
+            <!--Content Column-->
+            <div class="content-column col-lg-6">
+                <h3><span class="orange-text">Giảm giá</span> 03/2023</h3>
+                <h4>Điều rang muối cháy tỏi</h4>
+                <div class="text">Vị tỏi ớt thơm ngon, kích thích vị giác khiến người ăn thích thú trên mỗi hạt điều rang. <strong>Hạt điều tỏi ớt Vinahe</strong> gói 70g béo ngậy, thơm ngon đóng gói theo dạng túi zip, dễ mở, dễ bào quản sau sử dụng. Khối lượng không quá nhiều vưới 70g, luôn đảm bảo độ giòn ngon  khi sử dụng trong thời gian hợp lý.</div>
+                <!--Countdown Timer-->
+                <div class="time-counter"><div class="time-countdown clearfix" data-countdown="2023/4/01"><div class="counter-column"><div class="inner"><span class="count">00</span>Days</div></div> <div class="counter-column"><div class="inner"><span class="count">00</span>Hours</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Mins</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Secs</div></div></div></div>
+                <a href="cart.html" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end cart banner section -->
+<!-- testimonail-section -->
+@Html.Partial("_IntroductionPartial")
+<!-- end testimonail-section -->
+<!-- advertisement section -->
+<div class="abt-section mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="abt-bg">
+                    <a href="https://www.youtube.com/watch?v=DBLlFWYcIGQ" class="video-play-btn popup-youtube"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="abt-text">
+                    <p class="top-sub">Sáng lập năm 2023</p>
+                    <h2><span class="orange-text">Binh Phuoc Food</span></h2>
+                    <p>123123123</p>
+                    <p>123123123</p>
+                    <a href="about.html" class="boxed-btn mt-4">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end advertisement section -->
+<!-- shop banner -->
+@*<section class="shop-banner">
+    <div class="container">
+        <h3>December sale is on! <br> with big <span class="orange-text">Discount...</span></h3>
+        <div class="sale-percent"><span>Sale! <br> Upto</span>50% <span>off</span></div>
+        <a href="shop.html" class="cart-btn btn-lg">Shop Now</a>
+    </div>
+</section>*@
+<!-- end shop banner -->
+<!-- latest news -->
+<div class="latest-news pt-150 pb-150">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="section-title">
+                    <h3>Tin tức</h3>
+                    <p>Tin tức về hạt điều Bình Phước</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-news">
+                    <a href=@Url.Action("SingleNews", "Home")><div> <img src="~/AssetsClient/img/sua-hat-dieu.jpg" /></div></a>
+                    <div class="news-text-box">
+                        <h3><a href=@Url.Action("SingleNews", "Home")>Công dụng về hạt điều Bình Phước.</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Hiếu Nghĩa</span>
+                            <span class="date"><i class="fas fa-calendar"></i> @DateTime.Now</span>
+                        </p>
+                        <p class="excerpt">Với những thành phần dinh dưỡng trên thì ăn hạt điều sẽ mang lại rất nhiều lợi ích cho sức khỏe, bao gồm: Ngăn ngừa bệnh tim...</p>
+                        <a href="single-news.html" class="read-more-btn">Đọc thêm <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-latest-news">
+                    <a href="single-news.html"><div class="latest-news-bg news-bg-2"></div></a>
+                    <div class="news-text-box">
+                        <h3><a href="single-news.html">A man's worth has its season, like tomato.</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Hiếu Nghĩa</span>
+                            <span class="date"><i class="fas fa-calendar"></i> @DateTime.Now</span>
+                        </p>
+                        <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                        <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                <div class="single-latest-news">
+                    <a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
+                    <div class="news-text-box">
+                        <h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Hiếu Nghĩa</span>
+                            <span class="date"><i class="fas fa-calendar"></i> @DateTime.Now</span>
+                        </p>
+                        <p class="excerpt">Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.</p>
+                        <a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="#" class="boxed-btn">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end latest news -->
